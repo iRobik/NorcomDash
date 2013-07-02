@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="">
+        <div id="info"></div>
+        <div id="AliasCaption"></div>
+        <div id="AccountBalanceCaption"></div>
+        <div id="AccountBalanceValue"></div>
+        <div id="TimeLastUpdateValue"></div>
+        <div id="RubleCaption"></div>
+        <div id="image">
+            <img id="DC_img" class="invalid" src="Images/logo.png">
+        </div>
+        <div id="TimeLastUpdateCaption"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="">
+        <div id="done"></div>
+        <div id="AccountNumberEditCaptionBack"></div>
+        <div id="PhoneIdent" onclick="execStatsRequest(event)">
+            <input type="checkbox" name="PhoneIdent" id="PhoneIdentInput" value="1">
+            <div id="PhoneIdentCaption">Указан номер телефона</div>
+        </div>
+        <input id="AccountNumberEdit" type="text" name="" value="" onchange="execStatsRequest(event)">
+        <div id="AliasEditCaption"></div>
+        <input id="AliasEdit" type="text" name="" value="" onchange="execStatsRequest(event)">
+        <div id="ExampleCaption"></div>
+    </div>
+</body>
+</html>
